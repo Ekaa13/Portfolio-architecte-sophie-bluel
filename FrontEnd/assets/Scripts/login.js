@@ -3,6 +3,10 @@ const form = document.querySelector("form");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
+form.addEventListener("submit", (e)=> {
+  e.preventDefault();
+  })
+
 //fetch("http://localhost:5678/api/users/login", {
     //method: "POST",
     //mode: "cors",

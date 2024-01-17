@@ -21,8 +21,8 @@ fetchCategories();
 
 async function main() {
   displayWorks();
-  generateWorks();
 }
+main();
 
 async function displayWorks() {
   fetchWorks().then((data) => {
