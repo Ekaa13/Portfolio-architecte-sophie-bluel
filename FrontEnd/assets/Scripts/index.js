@@ -25,9 +25,7 @@ async function main() {
 }
 
 async function displayWorks() {
-  gallery.innerHTML = "";
   fetchWorks().then((data) => {
-    //cree pour chaque élément du tableau
     data.forEach((work) => {
       generateWorks(work);
     });
