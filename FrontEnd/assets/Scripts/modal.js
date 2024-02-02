@@ -218,7 +218,7 @@ function addWork() {
     })
         .then((res) => res.json())
         .then((data) => {
-            showNewWorks(data);
+            displayNewWorks(data);
         })
         .catch((error) => {
             console.error(error);
@@ -226,11 +226,11 @@ function addWork() {
 }
 
 // Fonction pour générer la galerie et la galerie dans la modale contenant le nouvel élément 
-function showNewWorks() {
+function displayNewWorks() {
     modalGallery.innerHTML = "";
     gallery.innerHTML = "";
-    workImportModal();
-    workImport();
+    fetchWorkModal();
+    fetchWork();
     
 };
 

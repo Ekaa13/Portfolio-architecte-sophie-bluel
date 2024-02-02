@@ -89,10 +89,9 @@ function createAll() {
 createAll();
 
 
-//Mode Edition**//
+//**Mode Edition**//
 
-// Affichage des fonctionnalités d'édition quand l'utilisateur est connecté // 
-
+// Affichage des fonctionnalités d'édition quand l'utilisateur est connecté  
 const token = localStorage.getItem("token");
 const editBanner = document.querySelector(".edit-banner");
 const modifier = document.querySelector(".modifier");
@@ -119,8 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     adminMode();
 });
 
-// Retour à la page initiale lors de la déconnexion //
-
+// Retour à la page initiale lors de la déconnexion 
 function adminLogout() {
     editBanner.style.display = "none";
     modifier.style.display = "none";
