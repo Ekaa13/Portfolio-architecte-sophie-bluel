@@ -44,12 +44,12 @@ function fetchWorkModal() {
         .then(data => {
             modalWorks = data
             const images = data;
-            showWorksModal(images);
+            displayWorksModal(images);
         })
 };
 fetchWorkModal();
 
-function showWorksModal(i) {
+function displayWorksModal(i) {
     i.forEach(image => {
         const figureElement = document.createElement("figure");
         modalGallery.appendChild(figureElement);
