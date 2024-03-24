@@ -37,6 +37,7 @@ document.querySelectorAll(".js-modal").forEach(a => {
 // Déclaration des variables pour l'affichage des travaux dans la modale 
 const modalGallery = document.querySelector(".modal-gallery");
 let modalWorks = [];
+
 // Récupération des projets depuis l'API et création & affichage des éléments dans la modale via une fonction 
 function fetchWorkModal() {
     fetch("http://localhost:5678/api/works")
